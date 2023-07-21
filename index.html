@@ -2,10 +2,71 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nothing here!</title>
+	<title>madgab4ever</title>
+	<link rel="shortcut icon" type="image/png" href="graphics/favicon.png"/>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.invite-heading {
+			column-gap: .6em;
+		}
+		.invite-heading-space {
+			display: none;
+		}
+		.invite-message a {
+			color: #FB5012;
+		}
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.10.1/tsparticles.confetti.bundle.min.js"></script>
+
+	<meta name="author" content="Gabriel Drozdov and Maddie Ulevich">
+	<meta name="keywords" content="weddings">
+	<meta name="description" content="What’s all the hubbub about?">
+	<meta property="og:url" content="https://madgab4ever.com/">
+	<meta name="og:title" property="og:title" content="madgab4ever">
+	<meta property="og:description" content="What’s all the hubbub about?">
+	<meta property="og:image" content="./graphics/opengraph.jpg">
 </head>
 <body>
-	Don’t be nosy!
+	<main class="container">
+		<div class="intro">
+			<img src="graphics/arrow.svg" class="intro-arrow">
+			<button class="intro-button" onclick="cutoutsIn(); confettiFire();"><span>CLICK HERE</span></button>
+			<p class="intro-text">for a very special message</p>
+		</div>
+		<div class="invite">
+			<p class="invite-subheading">~ SURPRISE ~</p>
+			<div class="invite-heading-container">
+				<h1 class="invite-heading"><span>We’re</span><span class="invite-heading-space">&nbsp;</span><span>getting</span><span class="invite-heading-space">&nbsp;</span><span>married!</span></h1>
+			</div>
+			<div class="invite-message-container">
+				<div class="invite-message">
+					<p>We want you at our wedding!</p>
+					<p><a href="https://www.zola.com/wedding/maddie-gabriel">Click here to get all the details.</a></p>
+					<p><em>Lots of love,<br>Maddie and Gabriel</em></p>
+				</div>
+			</div>
+		</div>
+		<div class="cutouts">
+			<div class="cutout-move" id="gab">
+				<div class="cutout-bob">
+					<img src="graphics/cutouts-gabs.png" class="cutout-sway">
+				</div>
+			</div>
+			<div class="cutout-move" id="mad">
+				<div class="cutout-bob">
+					<img src="graphics/cutouts-mads.png" class="cutout-sway">
+				</div>
+			</div>
+			<div class="cutout-move" id="limmy">
+				<div class="cutout-bob">
+					<img src="graphics/cutouts-limmy.png" class="cutout-sway">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
 </body>
 </html>
